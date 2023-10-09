@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">tarlecskiyLab1</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="introductionText">Введите значения в поля ввода</string>
+    <string name="sourceNumbersDescription">Значения для замены</string>
+    <string name="valueZDescription">Значение Z - числа в списке выше не должны быть больше него</string>
+    <string name="btnChangeAndCountDescription">Заменить значения, если они больше Z и подсчитать число замен</string>
+    <string name="textDescriptionResult">Количество замен</string>
+</resources>

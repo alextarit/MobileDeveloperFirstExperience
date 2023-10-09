@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewIntroduction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/introductionText"
+        android:layout_margin="7sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/sourceNumbers"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="number|textMultiLine"
+        android:contentDescription="@string/sourceNumbersDescription"
+        android:layout_margin="5sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewIntroduction"/>
+
+    <EditText
+        android:id="@+id/valueZ"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:contentDescription="@string/valueZDescription"
+        android:layout_margin="5sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sourceNumbers"/>
+
+    <Button
+        android:id="@+id/btnChangeAndCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnChangeAndCountDescription"
+        android:layout_margin="3sp"
+        android:background="@color/purple_200"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/valueZ"/>
+
+    <TextView
+        android:id="@+id/textViewDescriptionResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textDescriptionResult"
+        android:layout_margin="3sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnChangeAndCount"/>
+
+    <TextView
+        android:id="@+id/numberOfReplacements"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewDescriptionResult"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
